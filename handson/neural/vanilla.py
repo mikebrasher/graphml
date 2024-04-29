@@ -134,10 +134,10 @@ def main():
 
     use_cora = True
     if use_cora:
-        dataset = Planetoid(root='.', name='Cora')
+        dataset = Planetoid(root='../data', name='Cora')
         data = dataset[0]
     else:
-        dataset = FacebookPagePage(root='.')
+        dataset = FacebookPagePage(root='../data')
         data = dataset[0]
         data.train_mask = range(18000)
         data.val_mask = range(18001, 20000)
