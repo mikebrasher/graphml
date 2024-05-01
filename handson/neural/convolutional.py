@@ -204,7 +204,7 @@ def main():
         dataset = Planetoid(root='../data', name='Cora')
         data = dataset[0]
     else:
-        dataset = FacebookPagePage(root='../data')
+        dataset = FacebookPagePage(root='../data/FacebookPagePage')
         data = dataset[0]
         data.train_mask = range(18000)
         data.val_mask = range(18001, 20000)
