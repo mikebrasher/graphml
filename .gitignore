@@ -1,7 +1,8 @@
 .idea
+
 *.pdf
+*.txt
+
 data
-processed
-raw
 
 *~
